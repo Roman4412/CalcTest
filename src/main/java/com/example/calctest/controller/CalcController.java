@@ -1,6 +1,7 @@
 package com.example.calctest.controller;
 
 import com.example.calctest.CalcInterface.CalcInterface;
+import com.example.calctest.DefaultAdvice;
 import com.example.calctest.service.CalcService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -46,10 +47,6 @@ public class CalcController {
 
     @GetMapping("/divide")
     public String divide(@RequestParam(required = false) Integer num1, @RequestParam(required = false) Integer num2) {
-        if (num2 == null || num1 == null || num2 == 0) {
-            return "Один из аргументов отсутствует или равен нулю";
-        } else {
-            return String.format("%d / %d = %d", num1, num2, serviceInterface.divide(num1, num2));
-        }
+        return String.format("%d / %d = %d", num1, num2, serviceInterface.divide(num1, num2));
     }
 }
