@@ -1,7 +1,7 @@
 package com.example.calctest;
 
-import Exceptions.DivisionByZeroException;
-import Exceptions.ParamException;
+import com.example.calctest.Exceptions.DivisionByZeroException;
+import com.example.calctest.Exceptions.ParamException;
 import com.example.calctest.service.CalcService;
 import org.junit.jupiter.api.Test;
 

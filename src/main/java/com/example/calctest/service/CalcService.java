@@ -1,6 +1,6 @@
 package com.example.calctest.service;
-import Exceptions.DivisionByZeroException;
-import Exceptions.ParamException;
+import com.example.calctest.Exceptions.DivisionByZeroException;
+import com.example.calctest.Exceptions.ParamException;
 import com.example.calctest.CalcInterface.CalcInterface;
 import org.springframework.stereotype.Service;
 

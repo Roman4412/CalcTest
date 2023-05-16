@@ -1,6 +1,6 @@
 package com.example.calctest.CalcInterface;
 
-import Exceptions.DivisionByZeroException;
+import com.example.calctest.Exceptions.DivisionByZeroException;
 
 public interface CalcInterface {
     String toGreet();

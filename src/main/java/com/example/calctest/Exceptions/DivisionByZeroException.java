@@ -1,4 +1,4 @@
-package Exceptions;
+package com.example.calctest.Exceptions;
 
 public class DivisionByZeroException extends IllegalArgumentException {
     public DivisionByZeroException() {
