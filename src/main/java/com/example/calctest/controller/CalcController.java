@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/calculator")
 public class CalcController {
-    CalcInterface serviceInterface = new CalcService();
+    private final CalcInterface serviceInterface = new CalcService();
 
     @GetMapping()
     public String toGreet() {
